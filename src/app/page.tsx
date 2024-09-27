@@ -10,9 +10,12 @@ export default function Home() {
     if (telegram) {
       setHasTelegram(true);
       const app = telegram.WebApp;
-      app.MainButton?.setText('Main Button');
+      app.MainButton.setText('Main Button');
       // app.MainButton.setParams({ color: "#4CAF50" });
       app.MainButton.show();
+      app.MainButton.onClick = () => {
+        app.sendData("Button clicked with some custom data.");
+      }
     }
   }, []);
 
