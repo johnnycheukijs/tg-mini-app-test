@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [hasTelegram, setHasTelegram] = useState(false);
+  const [mainButtonClicked, setMainButtonClicked] = useState(false);
 
   useEffect(() => {
     const telegram = (window as any).Telegram;
@@ -23,6 +24,7 @@ export default function Home() {
     <div>
       <p>Hello</p>
       <p>{hasTelegram ? 'Has telegram' : 'Telegram undefined'}</p>
+      {mainButtonClicked && <p>Main button is clicked</p>}
     </div>
   );
 }
