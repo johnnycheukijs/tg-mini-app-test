@@ -11,7 +11,7 @@ export default function Home() {
       setHasTelegram(true);
       const app = telegram.WebApp;
       app.MainButton?.setText('Main Button');
-      app.MainButton.setParams({ color: "#4CAF50" });
+      // app.MainButton.setParams({ color: "#4CAF50" });
       app.MainButton.show();
     }
   }, []);
