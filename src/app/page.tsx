@@ -14,6 +14,7 @@ export default function Home() {
       app.MainButton.setText('Main Button');
       // app.MainButton.setParams({ color: "#4CAF50" });
       app.MainButton.show();
+      app.MainButton.enable();
       app.MainButton.onClick(() => {
         app.sendData("Button clicked with some custom data.");
       })
