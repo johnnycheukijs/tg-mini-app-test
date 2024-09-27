@@ -29,7 +29,7 @@ export default function Home() {
     <div>
       <p>Hello</p>
       <p>{hasTelegram ? 'Has telegram' : 'Telegram undefined'}</p>
-      <button type="button" id="btn"></button>
+      <button type="button" id="btn">Click me to send data</button>
       {mainButtonClicked && <p>Main button is clicked</p>}
     </div>
   );
