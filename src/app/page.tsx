@@ -16,6 +16,7 @@ export default function Home() {
       app.MainButton.show();
       app.MainButton.enable();
       app.MainButton.onClick(function() {
+        setMainButtonClicked(true);
         app.sendData("Button clicked with some custom data.");
       })
     }
