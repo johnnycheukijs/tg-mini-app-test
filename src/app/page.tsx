@@ -7,6 +7,7 @@ export default function Home() {
 
   const getInvoiceLink = async () => {
     const response = await fetch('http://localhost:3000/invoice', {
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
