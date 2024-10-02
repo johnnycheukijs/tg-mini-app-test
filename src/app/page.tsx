@@ -46,12 +46,13 @@ export default function Home() {
       app.MainButton.show();
       app.MainButton.enable();
       app.MainButton.onClick(async () => {
-        // const invoiceLink = await getInvoiceLink();
-        app.sendData('Button clicked');
-        // app.openInvoice(invoiceLink);
+        const invoiceLink = await getInvoiceLink();
+        console.log(invoiceLink);
+        // app.sendData('Button clicked');
+        app.openInvoice(invoiceLink);
       })
       document.querySelector('#btn')?.addEventListener('click', async () => {
-        app.sendData("Button clicked");
+        // app.sendData("Button clicked");
         // const invoiceLink = await getInvoiceLink();
         // app.openInvoice(`%7B%22payload%22%3A%22Custom-Payload%22%2C%22providerToken%22%3A%225322214758%3ATEST%3Acb622446-978d-44f2-b2c9-b6015719f504%22%7D`);
       })
