@@ -46,7 +46,7 @@ export default function Home() {
       app.MainButton.show();
       app.MainButton.enable();
       app.MainButton.onClick(async () => {
-        const invoiceLink = await getInvoiceLink();
+        // const invoiceLink = await getInvoiceLink();
         app.sendData('Button clicked');
         // app.openInvoice(invoiceLink);
       })
