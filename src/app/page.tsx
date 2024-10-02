@@ -15,7 +15,8 @@ export default function Home() {
         title: 'Subscribe AnnaSings',
         description: 'Subscribe AnnaSings',
         currency: 'USD',
-        prices: [{ "label": "Subscription Fee", amount: 100000 }]
+        prices: [{ "label": "Subscription Fee", amount: 100000 }],
+        photoUrl: 'https://cdn.leonardo.ai/users/7eea0bee-024f-4577-b0db-ba64811f7fc1/generations/01019641-df17-4b2e-bff4-b526dd9c9a5b/Portrait_Perfect_female_singer_2.jpg'
       })
     });
     console.log('response', response)
