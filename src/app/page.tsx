@@ -52,7 +52,7 @@ export default function Home() {
       document.querySelector('#btn')?.addEventListener('click', async () => {
         // app.sendData("Button clicked");
         const invoiceLink = await getInvoiceLink();
-        app.openInvoice(invoiceLink);
+        app.openInvoice(`%7B%22payload%22%3A%22Custom-Payload%22%2C%22providerToken%22%3A%225322214758%3ATEST%3Acb622446-978d-44f2-b2c9-b6015719f504%22%7D`);
       })
     }
   }, []);
