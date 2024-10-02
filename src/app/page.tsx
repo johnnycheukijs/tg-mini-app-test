@@ -19,6 +19,7 @@ export default function Home() {
         prices: [{ "label": "Subscription Fee", amount: 100000 }]
       })
     });
+    console.log('response', response)
     if (response.ok) {
       const data = await response.json();
       if (data.success) {
